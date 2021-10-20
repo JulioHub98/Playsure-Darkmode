@@ -1,0 +1,942 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name = "color-scheme" content="light dark">
+      <meta name = "supported-color-schemes" content="light dark">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+      <title>Playsure</title>
+      <style>
+         table {
+         border-spacing:0;
+         padding:0;
+         Margin:0;
+         border-collapse:collapse;
+         }
+         td{
+         padding:0;
+         }
+         img{
+         border:0;
+         }
+         a{
+         outline:none;
+         text-decoration:none;
+         border:none;
+         }
+         p{
+         color:white;
+         Margin:0px;
+         }
+         h1, h2{
+         color:white;
+         font-size:36px;
+         font-weight:400;
+         Margin:0px;
+         }
+         @media screen and (max-width:610px){
+         div{
+         width:100% !important;
+         }
+         .email{
+         max-width:100% !important;
+         }
+         .logo{
+         width:100% !important;
+         height:auto;
+         }
+         .coverimage{
+         width:100% !important;
+         height:auto; 
+         }
+         .twocolumnsrowone{
+         padding:0px 144px 0px 144px !important;
+         }
+         .firstrowpadding{
+         padding:0px !important;
+         }
+            .firstalbum{
+            display:inline-block !important;
+            padding-bottom:38px !important;
+            }
+            .firstalbum img{
+            width:318px !important;
+            }
+            .firstalbum p{
+            width:100% !important;
+            }
+            .secondalbum{
+            display:block !important;
+            }
+            .secondalbum img{
+            width:318px !important;
+            }
+            .secondalbum p{
+            width:100% !important;
+            }
+         .twocolumnsrowtwo{
+         padding:38px 144px 60px 144px !important;
+         }
+         .secondrowpadding{
+         padding:0px !important;
+         }
+            .thirdalbum{
+            display:inline-block !important;
+            padding-bottom:38px !important;
+            }
+            .thirdalbum img{
+            width:318px !important;
+            }
+            .thirdalbum p{
+            width:100% !important;
+            }
+            .fourthalbum{
+            display:block !important;
+            }
+            .fourthalbum img{
+            width:318px !important;
+            }
+            .fourthalbum p{
+            width:100% !important;
+            }
+
+         .albumhspace{
+         display:none !important;
+         width:0px !important;
+         }
+         .adimage{
+         width:100% !important;
+         height:auto;
+         }
+         }
+         @media screen and (max-width:605px){
+         .firstalbum img{
+         width:100% !important;
+         height:auto;
+         }
+         .secondalbum img{
+         width:100% !important;
+         height:auto;
+         }
+         .thirdalbum img{
+         width:100% !important;
+         height:auto;
+         }
+         .fourthalbum img{
+         width:100% !important;
+         height:auto;
+         }
+         }
+         @media screen and (max-width:590px){
+         .twocolumnsrowone{
+         padding-left:134px !important;
+         padding-right:134px !important;
+         }
+         .twocolumnsrowtwo{
+         padding-left:134px !important;
+         padding-right:134px !important;
+         }
+         }
+         @media screen and (max-width:550px){
+         .twocolumnsrowone{
+         padding-left:118px !important;
+         padding-right:118px !important;
+         }
+         .twocolumnsrowtwo{
+         padding-left:118px !important;
+         padding-right:118px !important;
+         }
+         }
+         @media screen and (max-width:549px){
+         .twocolumnsrowone{
+         padding-left:116px !important;
+         padding-right:116px !important;
+         }
+         .twocolumnsrowtwo{
+         padding-left:116px !important;
+         padding-right:116px !important;
+         }
+
+         }
+         @media screen and (max-width:429px){
+         .premium{
+         font-size:16px !important;
+         width:110px !important;
+         }
+         .support{
+         font-size:16px !important;
+         width:102px !important;
+         }
+         .download{
+         font-size:16px !important;
+         }
+         .vspacelinks{
+         height:20px !important;
+         }
+         .coverimage{
+         width:340px !important;
+         }
+         .vspacecoverimage{
+         height:10px !important;
+         }
+         .vlowerspacecoverimage{
+         height:50px !important;
+         }
+         h1{
+         font-size:24px !important;
+         }
+         .twocolumnsrowone{
+         padding:0px 108px 30px 108px !important;
+         }
+         .firstalbum{
+         padding-bottom:30px !important;
+         }
+         .firstalbum img{
+         width:210px !important;
+         padding-bottom:10px !important;
+         }
+         .secondalbum img{
+         width: 210px !important;
+         padding-bottom:10px !important;
+         }
+         .twocolumnsrowtwo{
+         padding:0px 108px 50px 108px !important;
+         }
+         .thirdalbum img{
+         width:210 !important;
+         padding-bottom:10px !important;
+         }
+         .fourthalbum img{
+         width:210px !important;
+         padding-bottom:10px !important;
+         }
+         .vupperadspace{
+         height:80px !important;
+         }
+         .vloweradspace{
+         height:20px !important;
+         }
+         .adtitle h2{
+         font-size:24px !important;
+         }
+         .buttonpaddingleft{
+         width:116px !important;
+         }
+         .buttonpaddingright{
+         width:116px !important;
+         }
+         .button a{
+         font-size:14px !important;
+         }
+         .vplaybuttonspace{
+         height:20px !important;
+         }
+         .vupperfooterspace{
+         height:170px !important;
+         }
+         .mailfooter p{
+         font-size:16px !important;
+         }
+         .mailfooter .lowerleftpadding{
+         width:54px !important;
+         }
+         .mailfooter .lowerrightpadding{
+         width:54px !important;
+         }
+         .mailfooter .facebook{
+         padding-top:47px !important;
+         }
+            .facebook img{
+            width:43px !important;
+            }
+         .mailfooter .instagram{
+         padding-top:47px !important;
+         }
+            .instagram img{
+            width:43px !important;
+            }
+         .mailfooter .twitter{
+         padding-top:47px !important;
+         }
+            .twitter img{
+            width:43px !important;
+            }
+         .vlowersocialmediaspace{
+         height:10px !important;
+         }
+         .vlowerfooterspace{
+         height:48px !important;
+         }
+         }
+         @media screen and (max-width:415px){
+         .premium{
+         width:102px !important;
+         }   
+         .support{
+         width:94px !important;
+         }
+         h1{
+         padding:0px 38px 0px 38px !important;
+         }
+         .upperleftpadding{
+         width:0px !important;
+         }
+         .upperrightpadding{
+         width:0px !important;
+         }
+         .firstrowpadding{
+         padding-left:102px !important;
+         padding-right:102px !important;
+         padding-bottom:30px !important;
+         }
+         .secondrowpadding{
+         padding-left:102px !important;
+         padding-right:102px !important;
+         padding-bottom:50px !important;
+         }
+         .thirdalbum img{
+         width:210px !important;
+         }
+         .twocolumnsrowone{
+         padding:0px !important;
+         }
+         .twocolumnsrowtwo{
+         padding:0px !important;
+         }
+         .horizontalrule .lowerleftpadding{
+         width:80px !important;
+         }
+         .horizontalrule .lowerrightpadding{
+         width:80px !important;
+         }
+         .lowerleftpadding{
+         width:0px !important;
+         }
+         .adtitle .lowerleftpadding{
+         width:80px !important;
+         }
+         .adtitle .lowerrightpadding{
+         width:80px !important;
+         }
+         .buttontable .buttonpaddingleft{
+         width:110px !important;
+         }
+         .buttontable .buttonpaddingright{
+         width:110px !important;
+         }
+         .lowerrightpadding{
+         width:0px !important;
+         }
+            .mailfooter .lowerleftpadding{
+            width:0px !important;
+            }
+            .mailfooter .lowerrightpadding{
+            width:0px !important;
+            }
+         .covercontainer{
+         width:100% !important;
+         }
+         .mailfooter .lowerleftpadding{
+         width:40px !important;
+         }
+         .mailfooter .lowerrightpadding{
+         width:40px !important;
+         }
+         }
+         @media screen and (max-width:413px){
+         .premium{
+         width:88px !important;
+         }   
+         .support{
+         width:80px !important;
+         }
+         h1{
+         padding-left:32px !important;
+         padding-right:32px !important;
+         }
+         .firstrowpadding{
+         padding-left:100px !important;
+         padding-right:100px !important;
+         }
+         .secondrowpadding{
+         padding-left:100px !important;
+         padding-right:100px !important;
+         }
+         .buttontable .buttonpaddingleft{
+         width:92px !important;
+         }
+         .buttontable .buttonpaddingright{
+         width:92px !important;
+         }
+         .mailfooter .lowerleftpadding{
+         width:20px !important;
+         }
+         .mailfooter .lowerrightpadding{
+         width:20px !important;
+         }
+         }
+         @media screen and (max-width:391px){
+         .firstrowpadding{
+         padding-left:90px !important;
+         padding-right:90px !important;
+         }
+         .secondrowpadding{
+         padding-left:90px !important;
+         padding-right:90px !important;
+         }
+         }
+         @media screen and (max-width:385px){
+         .firstrowpadding{
+         padding-left:86px !important;
+         padding-right:86px !important;
+         }
+         .secondrowpadding{
+         padding-left:86px !important;
+         padding-right:86px !important;
+         }
+         }
+         @media screen and (max-width:379px){
+         .premium{
+         width:84px !important;
+         }   
+         .support{
+         width:76px !important;
+         }
+         h1{
+         padding-left:16px !important;
+         padding-right:16px !important;
+         }
+         .firstrowpadding{
+         padding-left:82px !important;
+         }
+         .secondrowpadding{
+         padding-left:82px !important;
+         }
+         .buttontable .buttonpaddingright{
+         width:90px !important;
+         }
+         .mailfooter .lowerleftpadding{
+         width:20px !important;
+         }
+         }
+         @media screen and (max-width:376px){
+         .firstrowpadding{
+         padding-left:82px !important;
+         padding-right:82px !important;
+         }
+         .secondrowpadding{
+         padding-left:82px !important;
+         padding-right:82px !important;
+         }
+         }
+         @media screen and (max-width:361px){
+         .premium{
+         width:74px !important;
+         }
+         .download{
+         width:146px !important;
+         }
+         .support{
+         width:66px !important;
+         }
+         .coverimage{
+         width:304px !important;
+         }
+         h1{
+         padding-left:26px !important;
+         padding-right:26px !important;
+         }
+         .firstrowpadding{
+         padding-left:74px !important;
+         padding-right:74px !important;
+         }
+         .secondrowpadding{
+         padding-left:74px !important;
+         padding-right:74px !important;
+         }
+         .adtitle .lowerleftpadding{
+         width:50px !important;
+         }
+         .adtitle .lowerrightpadding{
+         width:50px !important;
+         }
+         .horizontalrule .lowerleftpadding{
+         width:68px !important;
+         }
+         .buttontable .buttonpaddingleft{
+         width:70px !important;
+         }
+         .buttontable .buttonpaddingright{
+         width:70px !important;
+         }
+         .mailfooter .lowerleftpadding{
+         width:34px !important;
+         }
+         .mailfooter .lowerrightpadding{
+         width:28px !important;
+         }
+         }
+         @media screen and (max-width:340px){
+         .firstrowpadding{
+         padding-left:66px !important;
+         }
+         .secondrowpadding{
+         padding-left:66px !important;
+         }
+         .horizontalrule .lowerleftpadding{
+         width:78px !important;
+         }
+         .buttontable .buttonpaddingleft{
+         width:70px !important;
+         }
+         .buttontable .buttonpaddingright{
+         width:70px !important;
+         }
+         .mailfooter .lowerleftpadding{
+         width:34px !important;
+         }
+         .mailfooter .lowerrightpadding{
+         width:28px !important;
+         }
+
+         }
+         @media screen and (max-width:330px){
+         .firstrowpadding{
+         padding-left:60px !important;
+         }
+         .secondrowpadding{
+         padding-left:60px !important;
+         }
+         .horizontalrule .lowerleftpadding{
+         width:78px !important;
+         }
+         .buttontable .buttonpaddingleft{
+         width:70px !important;
+         }
+         }
+         @media screen and (max-width:320px){
+         .premium{
+         width:20px !important;
+         }
+         .support{
+         width:20px !important;
+         }
+         .firstrowpadding{
+         padding-left:56px !important;
+         }
+         .secondrowpadding{
+         padding-left:56px !important;
+         }
+         .horizontalrule .lowerleftpadding{
+         width:78px !important;
+         }
+         .buttontable .buttonpaddingleft{
+         width:70px !important;
+         }
+
+         }
+         @media screen and (max-width:310px){
+         .premium{
+         text-align:center !important;
+         width:0px !important;
+         }
+         .support{
+         text-align:center !important;
+         width:0px !important;
+         }
+         .firstrowpadding{
+         padding-left:48px !important;
+         }
+         .secondrowpadding{
+         padding-left:48px !important;
+         }
+         .horizontalrule .lowerleftpadding{
+         width:78px !important;
+         }
+         .buttontable .buttonpaddingleft{
+         width:70px !important;
+         }
+         }
+
+        :root {
+        color-scheme:light dark;
+        supported-color-schemes: light dark;
+        }
+        @media (prefers-color-scheme: dark){
+        body{
+        background-color:black !important;
+        }
+        center{
+        background-color:black !important;
+        }
+        div{
+        background-color:black !important;
+        }
+        .email p,a,h1,h2{
+        color:#E5E5E5 !important;
+        }
+        .mailfooter{
+        background-color:black !important;
+        }
+        }
+      </style>
+
+      <!--Outlook Styles-->
+      <!--[if gte mso 9]>
+      <style>
+         table {
+         border-spacing:0;
+         padding:0;
+         Margin:0;
+         border-collapse:collapse;
+         }
+         td{
+         padding:0;
+         }
+         img{
+         border:0;
+         }
+         a{
+         outline:none;
+         text-decoration:none;
+         border:none;
+         }
+
+         .button{
+         display:none !important;
+         }
+         .buttontable{
+         display:none !important;
+         }
+         .buttonoutlook{
+         padding:0px !important;
+         }
+        @media (prefers-color-scheme: dark){
+        body{
+        background-color:black !important;
+        }
+        div{
+        background-color:black !important;
+        }
+        .email p,a,h1,h2{
+        color:#E5E5E5 !important;
+        }
+        .mailfooter{
+        background-color:black !important;
+        }
+        }
+         <![endif]-->
+         <!--[if gte mso 9]>
+      </style>
+      <![endif]-->
+   </head>
+   <body bgcolor = "#000000" style="Margin:0; padding:0; width:100%; background-color:black">
+    <!--for Yahoo Mail App-->
+   <style>
+   table {
+   border-spacing:0;
+   padding:0;
+   Margin:0;
+   border-collapse:collapse;
+   }
+   td{
+   padding:0;
+   }
+   img{
+   border:0;
+    }
+  </style>
+
+      <center width = "100%" style="table-layout:fixed; padding:0px 0px 40px 0px;">
+         <div width = "600" align = "center" style="background-color:black; width:600px;">
+            <!--preheader text-->
+            <div style="font-size:0px; color:#4E5283; line-height:1px; display:none; opacity:0;">Your monthly recommendations are here...</div>
+            <!--[if gte mso 9]>
+            <table width = "600" align = "center" role = "presentation" style = "border-spacing:0; text-align:center;">
+               <![endif]-->
+               <table align="center" style="color:black; font-family:'Roboto', sans-serif; Margin:0; padding:0;
+                  width:100%; max-width:600px; background-color:#151515; box-shadow: 0px 7px 11px 3px rgba(0,0,0,0.24);" class="email" role="presentation">
+                  <tr>
+                     <td style="padding:0; background-color:#151515;">
+                  <tr>
+                     <td>
+                        <table width = "100%" role="presentation" cellpadding = "0" cellspacing = "0">
+                           <tr>
+                              <td width = "100%" height = "120" valign = "middle" style="width:100%; height:120px; background-color:#7871AA;
+                                 font-size:24px; text-transform:uppercase; font-weight:bold; color:white; text-align:center; vertical-align:middle;">
+                                 <a href="" style="color:white;"><img src="https://i.ibb.co/Wsyj4Z3/logo.png" class="logo" style="width:600px;" alt="PLAYSURE"></a>  
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <!--Links-->
+                  <tr>
+                     <td>
+                        <table width = "100%" role="presentation" style= "font-size:18px;">
+                           <tr>
+                              <td height = "10" style="height:10px;"></td>
+                           </tr>
+                           <tr>
+                              <td class="premium" width = "164" style="width:164px; text-align:right;"><a href="" style="color:white;">Premium</a></td>
+                              <td class="download" style="text-align:center;"><a href="" style="color:white;">Download</a>
+                              <td class="support" width = "155px" style="width:155px; text-align:left;"><a href="" style="color:white;">Support</a></td>
+                           </tr>
+                           <tr>
+                              <td class = "vspacelinks" height = "30" style="height:30px;"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <!--Headset Image & Text-->
+                  <tr>
+                     <td>
+                        <table width = "100%" role="presentation">
+                           <tr>
+                              <td class="upperleftpadding" width = "91" style="width:91px;"></td>
+                              <td class="covercontainer" align="center" height = "259" style="text-align:center; height:259px; "><img src="https://i.ibb.co/DKp88Qg/faceheadseticon.gif" class="coverimage" style="width:419px;" alt=""></td>
+                              <td class="upperrightpadding" width = "91" style="width:91px;"></td>
+                           </tr>
+                           <tr>
+                              <td class="vspacecoverimage" height = "20" style="height:20px;"></td>
+                           </tr>
+                           <tr>
+                              <td class="upperleftpadding" width = "91" style="width:91px;"></td>
+                              <td align="center" style="text-align:center;">
+                                 <h1>Our monthly recommendations ...</h1>
+                              </td>
+                              <td class="upperrightpadding" width = "91" style="width:91px;"></td>
+                           </tr>
+                           <tr>
+                              <td class ="vlowerspacecoverimage" height = "60" style="height:60px;"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <!--Album Covers-->
+                  <tr>
+                     <td>
+                        <table width = "100%" role="presentation">
+                           <tr>
+                              <td class="twocolumnsrowone" style="padding:0; font-size:0; text-align:center;">
+                                 <table width = "100%" valign = "top" style="vertical-align:top; display:inline-block;">
+                                    <tr>
+                                       <td class="firstrowpadding" style="padding-left:90px; padding-right:90px; width:100%;">
+                                          <table class="rowonecontent" width = "100%" role="presentation" style="font-size:14px; color:black;">
+                                             <tr>
+                                                <td class="firstalbum">
+                                                <table>
+                                                   <tr>
+                                                   <td>
+                                                   <img src="https://i.ibb.co/vZQSznJ/albumone.png" alt="Album #1:" width="190" style="width:190px; padding-bottom:10px;">
+                                                   <!--[if gte mso 9]>
+                                                   <br>
+                                                   <br>
+                                                   <![endif]-->
+                                                   <p style="width:190px; text-align:center;">Chrome Sparks <br><b>Goddess</b></p>
+                                                   </td>
+                                                   </tr>
+                                                </table>
+                                                </td>
+                                                <td class="albumhspace" width = "38" style="width:38px;"></td>
+                                                <td class="secondalbum">
+                                                <table>
+                                                   <tr>
+                                                   <td>
+                                                   <img src="https://i.ibb.co/YTnTkWw/albumtwo.png" alt="Album #2:" width="190" style = "width:190px; padding-bottom:10px;">
+                                                   <!--[if gte mso 9]>
+                                                   <br>
+                                                   <br>
+                                                   <![endif]-->
+                                                   <p style="width:190px; text-align:center;">Eric Lau <br><b>Examples Vol 2</b></p>
+                                                   </td>
+                                                   </tr>
+                                                </table>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="twocolumnsrowtwo" style="padding:0; font-size:0; text-align:center;">
+                                 <table width = "100%" valign = "top" style="vertical-align:top; display:inline-block;">
+                                    <tr>
+                                       <td class="secondrowpadding" style="padding-top:30px; padding-left:90px; padding-right:90px; padding-bottom:60px;">
+                                          <table class="rowtwocontent" width = "100%" role="presentation" style="font-size:14px; color:black;">
+                                             <tr>
+                                                <td class="thirdalbum">
+                                                <table>
+                                                <tr>
+                                                   <td>
+                                                      <img src="https://i.ibb.co/25Fgqgt/albumthree.png" alt="Album #3:" width="190" style="width:190px; padding-bottom:10px;">
+                                                      <!--[if gte mso 9]>
+                                                      <br>
+                                                      <br>
+                                                      <![endif]-->
+                                                      <p style="width:190px; text-align:center;">Flying Lotus <br><b>Until the Quiet Comes</b></p>
+                                                   </td>
+                                                </tr>
+                                                </table>
+                                                </td>
+                                                <td class="albumhspace" width = "38" style="width:38px;"></td>
+                                                <td class="fourthalbum">
+                                                <table>
+                                                   <tr>
+                                                      <td>
+                                                      <img src="https://i.ibb.co/NymdZ11/albumfour.png" alt="Album #4:" width="190" style="width:190px; padding-bottom:10px;">
+                                                      <!--[if gte mso 9]>
+                                                      <br>
+                                                      <br>
+                                                      <![endif]-->
+                                                      <p style="width:190px; text-align:center;">Machinedrum <br><b>A View of You</b></p>
+                                                      </td>
+                                                   </tr>
+                                                </table>
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <!--<hr>-->
+                  <tr>
+                     <td class="horizontalrule">
+                        <table>
+                           <tr>
+                              <td class="lowerleftpadding" width = "91" style="width:91px;"></td>
+                              <td  class="hr" width = "418" height = "2" style="height:2px; width:418px; background-color:#7871AA;"></td>
+                              <td class="lowerrightpadding" width = "91" style="width:91px;"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <!--Ad-->
+                  <tr>
+                     <td>
+                        <table width = "100%" role="presentation" style="width:100%;">
+                           <tr>
+                              <td class="vupperadspace" height = "90" style="height:90px;"></td>
+                           </tr>
+                           <tr>
+                              <td style="text-align:center;"><img src="https://i.ibb.co/4Sj9Rkz/ad.png" class="adimage" style="width:600px;" alt=""></td>
+                           </tr>
+                           <tr>
+                              <td class="vloweradspace" height = "30" style="height:30px;"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <table width = "100%" role="presentation" style="width:100%;" class="adtitle">
+                           <tr>
+                              <td class="lowerleftpadding" width = "91" style="width:91px;"></td>
+                              <td>
+                                 <h2 style="text-align:center;">Try your Playsure's generated-playlist</h2>
+                              </td>
+                              <td class="lowerrightpadding" width = "91" style="width:91px;"></td>
+                           </tr>
+                           <tr>
+                              <td class="vplaybuttonspace" height = "30" style="height:30px;"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <!--[if gte mso 9]>
+                        <table class = "buttontableoutlook" width = "100%" role = "presentation" style = "width:100%;">
+                           <tr>
+                              <td class = "buttonpaddingleftoutlook" width = "166" style = "width:166px;"><br>
+                              <td class = "buttonoutlook" style = "text-align:center; background-color:#7871AA; border-radius:6px;">
+                                 <a href = "" style = "color:white; width:100%;">
+                                    Play<br>
+                              <td class = "buttonpaddingleftoutlook" width = "166" style = "width:166px;"><br>
+                              <![endif]-->
+                              <table class="buttontable" width = "100%" role="presentation" style="width:100%;">
+                              <tr>
+                              <td class="buttonpaddingleft" width = "150" style="width:150px;"></td>
+                              <td class="button" style="text-align:center; background-color:#7871AA; border-radius:6px; color:white; padding-top:10px;
+                                 padding-bottom:10px;">
+                              <a href = "" style="display:inline-block; color:white; border-radius:6px;; 
+                                 width:100%; background-color:#7871AA; font-size:18px;">Play</a>
+                              </td>
+                              <td class="buttonpaddingright" width = "150" style="width:150px;"></td>
+                              </tr>
+                              <!--[if gte mso 9]>
+                                  </td>
+                                </a>
+                              </td>
+                             </td>
+                            </tr>
+                          </table>
+                              <![endif]-->
+                              </td>
+                           </tr>
+                        </table>
+                        <!--Footer-->
+                  <tr>
+                     <td>
+                  <tr>
+                     <td class="vupperfooterspace" height = "180" style="height:180px;"></td>
+                  </tr>
+                  </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <table class="mailfooter" border= "0" width = "100%" style="width:100%; background-color:black; font-size:18px; ">
+                           <tr>
+                              <td class="facebook" width = "173" style="width:173px; text-align:right; padding-top:57px;"><a href="" style="color:white; text-decoration:underline;"><img src="https://i.ibb.co/y4Smc27/facebook.png" alt="Facebook"></a></td>
+                              <td class="instagram" width = "230" style="width:230px; text-align:center; padding-top:57px;"><a href="" style="color:white; text-decoration:underline;"><img src="https://i.ibb.co/G5pVfjF/instagram.png" alt="Instagram"></a></td>
+                              <td class="twitter" width = "173" style="width:173px; text-align:left; padding-top:57px;"><a href="" style="color:white; text-decoration:underline;"><img src="https://i.ibb.co/CsXj9Mf/twitter.png" alt="Facebook"></a></td>
+                           </tr>
+                           <tr>
+                              <td class="vlowersocialmediaspace" height = "20" style="height:20px;"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <table class="mailfooter" border = "0" width = "100%" style="width:100%; background-color:black; font-size:18px; color:white; ">
+                           <tr>
+                              <td class="lowerleftpadding" width = "91" style="width:91px;"></td>
+                              <td width = "418" style="width:418px; text-align:center; font-size:18px;">
+                                 <p>Not interested in receiving emails from us? You can always <a href="" style="color:white; font-weight:bold; text-decoration:underline;">unsubscribe here.</a></p>
+                                 <p style="color:#C9C9C9; text-align:center;">Playsure. All rights reserved.</p>
+                              </td>
+                              <td class="lowerrightpadding" width = "91" style="width:91px;"></td>
+                           </tr>
+                           <tr>
+                              <td class = "vlowerfooterspace" height = "58" style="height:58px;"></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  </td>
+                  </tr>
+                  </td>
+                  </tr>
+               </table>
+               <!--[if gte mso 9]>
+            </table>
+            <![endif]-->
+         </div>
+      </center>
+   </body>
+</html>
+
